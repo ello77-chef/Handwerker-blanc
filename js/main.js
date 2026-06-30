@@ -123,8 +123,8 @@
     let pct     = (x - rect.left) / rect.width;
     pct         = Math.min(Math.max(pct, 0.02), 0.98);
     const pctPx = pct * 100;
-    before.style.width       = pctPx + '%';
-    handle.style.left        = pctPx + '%';
+    before.style.clipPath = `inset(0 ${100 - pctPx}% 0 0)`;
+    handle.style.left     = pctPx + '%';
   }
 
   slider.addEventListener('mousedown',  (e) => { dragging = true; setPosition(e.clientX); });
@@ -140,18 +140,24 @@
   let pos = 0.5;
   let dir = -1;
   let animFrame;
+  function applyPos(p) {
+    before.style.clipPath = `inset(0 ${(1 - p) * 100}% 0 0)`;
+    handle.style.left     = (p * 100) + '%';
+  }
   function autoHint() {
     pos += dir * 0.003;
-    if (pos < 0.3) { dir = 1; }
-    if (pos > 0.7) { dir = -1; clearAnimation(); return; }
-    before.style.width = (pos * 100) + '%';
-    handle.style.left  = (pos * 100) + '%';
+    if (pos <= 0.3) { dir = 1; }
+    if (pos >= 0.7) {
+      cancelAnimationFrame(animFrame);
+      applyPos(0.5);
+      return;
+    }
+    applyPos(pos);
     animFrame = requestAnimationFrame(autoHint);
   }
   function clearAnimation() {
     cancelAnimationFrame(animFrame);
-    before.style.width = '50%';
-    handle.style.left  = '50%';
+    applyPos(0.5);
   }
   // Start hint after 1.5s, stop on first interaction
   const hintTimer = setTimeout(autoHint, 1500);
