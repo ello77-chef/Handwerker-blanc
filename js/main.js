@@ -108,6 +108,58 @@
 })();
 
 /* =============================================
+   BEFORE / AFTER SLIDER
+   ============================================= */
+(function () {
+  const slider   = document.getElementById('baSlider');
+  const before   = document.getElementById('baBefore');
+  const handle   = document.getElementById('baHandle');
+  if (!slider) return;
+
+  let dragging = false;
+
+  function setPosition(x) {
+    const rect  = slider.getBoundingClientRect();
+    let pct     = (x - rect.left) / rect.width;
+    pct         = Math.min(Math.max(pct, 0.02), 0.98);
+    const pctPx = pct * 100;
+    before.style.width       = pctPx + '%';
+    handle.style.left        = pctPx + '%';
+  }
+
+  slider.addEventListener('mousedown',  (e) => { dragging = true; setPosition(e.clientX); });
+  slider.addEventListener('touchstart', (e) => { dragging = true; setPosition(e.touches[0].clientX); }, { passive: true });
+
+  window.addEventListener('mousemove',  (e) => { if (dragging) setPosition(e.clientX); });
+  window.addEventListener('touchmove',  (e) => { if (dragging) setPosition(e.touches[0].clientX); }, { passive: true });
+
+  window.addEventListener('mouseup',  () => { dragging = false; });
+  window.addEventListener('touchend', () => { dragging = false; });
+
+  // Subtle auto-animate on load to hint interactivity
+  let pos = 0.5;
+  let dir = -1;
+  let animFrame;
+  function autoHint() {
+    pos += dir * 0.003;
+    if (pos < 0.3) { dir = 1; }
+    if (pos > 0.7) { dir = -1; clearAnimation(); return; }
+    before.style.width = (pos * 100) + '%';
+    handle.style.left  = (pos * 100) + '%';
+    animFrame = requestAnimationFrame(autoHint);
+  }
+  function clearAnimation() {
+    cancelAnimationFrame(animFrame);
+    before.style.width = '50%';
+    handle.style.left  = '50%';
+  }
+  // Start hint after 1.5s, stop on first interaction
+  const hintTimer = setTimeout(autoHint, 1500);
+  slider.addEventListener('mousedown',  () => { clearTimeout(hintTimer); cancelAnimationFrame(animFrame); }, { once: true });
+  slider.addEventListener('touchstart', () => { clearTimeout(hintTimer); cancelAnimationFrame(animFrame); }, { once: true, passive: true });
+})();
+
+/* =============================================
    CONTACT FORM SUBMIT
    ============================================= */
 (function () {

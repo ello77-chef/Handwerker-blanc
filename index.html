@@ -41,9 +41,11 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero__bg" style="background-image: url('https://picsum.photos/1600/900?random=10');"></div>
-    <div class="container">
+  <section class="hero hero--split">
+    <div class="hero__bg-solid"></div>
+    <div class="container hero__split-inner">
+
+      <!-- LEFT: Text -->
       <div class="hero__content">
         <div class="hero__label">Exklusive Gebäudereinigung</div>
         <h1 class="hero__title">Sauberkeit,<br />die man sieht.</h1>
@@ -58,6 +60,30 @@
           <span class="hero__badge-text">Wien &amp; Umgebung · Seit 2015</span>
         </div>
       </div>
+
+      <!-- RIGHT: Before/After Slider -->
+      <div class="hero__slider-wrap">
+        <div class="ba-slider" id="baSlider">
+          <div class="ba-slider__after">
+            <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Fo8OJRpdPkxkR7ZYIqtBbCpSjX/hf_20260630_120812_c2cef8cf-f22a-4e39-aa4e-3d2dedf19e68.png" alt="Nachher – sauber" draggable="false" />
+          </div>
+          <div class="ba-slider__before" id="baBefore">
+            <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Fo8OJRpdPkxkR7ZYIqtBbCpSjX/hf_20260630_120811_177151da-788c-4da2-950e-7464f03525ee.png" alt="Vorher – schmutzig" draggable="false" />
+          </div>
+          <div class="ba-slider__handle" id="baHandle">
+            <div class="ba-slider__line"></div>
+            <div class="ba-slider__btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M6 10l-4-4m0 0l4-4M2 6h16M14 10l4 4m0 0l-4 4M18 14H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="ba-slider__label ba-slider__label--before">Vorher</div>
+          <div class="ba-slider__label ba-slider__label--after">Nachher</div>
+        </div>
+        <p class="ba-slider__hint">← Schieberegler ziehen →</p>
+      </div>
+
     </div>
   </section>
 
