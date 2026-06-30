@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekte – [Firmenname] Graz</title>
+  <meta name="description" content="Referenzprojekte von [Firmenname] – Elektroinstallationen, Badsanierungen und mehr in Graz und der Steiermark." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav scrolled" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">[Firmen<span>name</span>]</a>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="projekte.html">Projekte</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <a href="kontakt.html" class="btn btn--yellow nav__cta">Jetzt anfragen →</a>
+        <button class="nav__burger" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav__mobile">
+      <a href="index.html">Home</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="kontakt.html" class="btn btn--yellow">Jetzt anfragen →</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__content">
+        <span class="eyebrow">Referenzen</span>
+        <h1>Unsere Projekte</h1>
+        <p>Ein Einblick in abgeschlossene Arbeiten – von kleinen Reparaturen bis zu großen Sanierungsprojekten in Graz und Umgebung.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER + GRID -->
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Alle Projekte</button>
+        <button class="filter-btn" data-filter="elektro">Elektro</button>
+        <button class="filter-btn" data-filter="sanitaer">Sanitär</button>
+        <button class="filter-btn" data-filter="renovierung">Renovierung</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-item project-card" data-category="elektro">
+          <img src="https://picsum.photos/600/420?random=41" alt="Elektroinstallation Neubau" width="600" height="420" />
+          <span class="project-card__label">Elektro</span>
+          <div class="project-card__overlay">
+            <div class="project-card__info">
+              <h4>Elektroinstallation Neubau EFH</h4>
+              <span>Graz-Andritz, 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item project-card" data-category="sanitaer">
+          <img src="https://picsum.photos/600/420?random=42" alt="Badsanierung" width="600" height="420" />
+          <span class="project-card__label">Sanitär</span>
+          <div class="project-card__overlay">
+            <div class="project-card__info">
+              <h4>Komplette Badsanierung</h4>
+              <span>Graz-Liebenau, 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item project-card" data-category="renovierung">
+          <img src="https://picsum.photos/600/420?random=43" alt="Wohnungssanierung" width="600" height="420" />
+          <span class="project-card__label">Renovierung</span>
+          <div class="project-card__overlay">
+            <div class="project-card__info">
+              <h4>Komplettсанierung 3-Zimmer-Wohnung</h4>
+              <span>Graz-Geidorf, 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item project-card" data-category="elektro">
+          <img src="https://picsum.photos/600/420?random=44" alt="Gewerbliche Elektroanlage" width="600" height="420" />
+          <span class="project-card__label">Elektro</span>
+          <div class="project-card__overlay">
+            <div class="project-card__info">
+              <h4>Gewerbliche Elektroanlage</h4>
+              <span>Graz-Puntigam, 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item project-card" data-category="sanitaer">
+          <img src="https://picsum.photos/600/420?random=45" alt="Heizungsanlage" width="600" height="420" />
+          <span class="project-card__label">Sanitär</span>
+          <div class="project-card__overlay">
+            <div class="project-card__info">
+              <h4>Wärmepumpe &amp; Fußbodenheizung</h4>
+              <span>Graz-Straßgang, 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item project-card" data-category="elektro">
+          <img src="https://picsum.photos/600/420?random=46" alt="Photovoltaikanlage" width="600" height="420" />
+          <span class="project-card__label">Elektro</span>
+          <div class="project-card__overlay">
+            <div class="project-card__info">
+              <h4>Photovoltaikanlage 12 kWp</h4>
+              <span>Graz-Umgebung, 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item project-card" data-category="renovierung">
+          <img src="https://picsum.photos/600/420?random=47" alt="Altbausanierung" width="600" height="420" />
+          <span class="project-card__label">Renovierung</span>
+          <div class="project-card__overlay">
+            <div class="project-card__info">
+              <h4>Altbausanierung Elektro &amp; Heizung</h4>
+              <span>Graz-Jakomini, 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item project-card" data-category="sanitaer">
+          <img src="https://picsum.photos/600/420?random=48" alt="Sanitärinstallation Neubau" width="600" height="420" />
+          <span class="project-card__label">Sanitär</span>
+          <div class="project-card__overlay">
+            <div class="project-card__info">
+              <h4>Sanitärinstallation Mehrfamilienhaus</h4>
+              <span>Graz-Eggenberg, 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item project-card" data-category="elektro">
+          <img src="https://picsum.photos/600/420?random=49" alt="Smart Home Installation" width="600" height="420" />
+          <span class="project-card__label">Elektro</span>
+          <div class="project-card__overlay">
+            <div class="project-card__info">
+              <h4>Smart Home KNX-System</h4>
+              <span>Graz-Mariatrost, 2022</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <div>
+          <h2>Ihr Projekt fehlt noch hier?</h2>
+          <p>Nehmen Sie Kontakt auf – wir freuen uns auf Ihr Vorhaben.</p>
+        </div>
+        <a href="kontakt.html" class="btn btn--black">Jetzt anfragen →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="footer__logo">[Firmen<span>name</span>]</a>
+          <p class="footer__desc">Ihr zuverlässiger Elektriker und Installateur in Graz und der Steiermark. Meisterbetrieb mit über 12 Jahren Erfahrung – für Privat und Gewerbe.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="projekte.html">Projekte</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Leistungen</h4>
+          <ul>
+            <li><a href="leistungen.html">Elektroinstallation</a></li>
+            <li><a href="leistungen.html">Heizung &amp; Sanitär</a></li>
+            <li><a href="leistungen.html">Wartung &amp; Reparatur</a></li>
+            <li><a href="leistungen.html">Smart Home</a></li>
+            <li><a href="leistungen.html">Photovoltaik</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon">👤</span>
+              <span>Samuel Keßler</span>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon">📞</span>
+              <a href="tel:+436649918004">+43 664 99180044</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon">✉️</span>
+              <a href="mailto:grazestudio@gmail.com">grazestudio@gmail.com</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon">📍</span>
+              <span>Graz, Steiermark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 [Firmenname]. Alle Rechte vorbehalten.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
