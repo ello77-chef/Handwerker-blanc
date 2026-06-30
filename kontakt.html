@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontakt – [Firmenname] Graz</title>
-  <meta name="description" content="Kontaktieren Sie [Firmenname] in Graz – Samuel Keßler, +43 664 99180044, grazestudio@gmail.com. Kostenloser Ersttermin." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <title>Kontakt – Clean Lux e.U. Wien</title>
+  <meta name="description" content="Kontaktieren Sie Clean Lux e.U. – +43 660 477 77 92 · cleanlux.rechnung@hotmail.com · Wien & Umgebung. Kostenlose Erstberatung." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230A1628'/><text y='.9em' font-size='55' font-family='serif' fill='%23C9A84C' x='10'>CL</text></svg>" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,17 +14,17 @@
   <header class="nav scrolled" id="nav">
     <div class="container">
       <div class="nav__inner">
-        <a href="index.html" class="nav__logo">[Firmen<span>name</span>]</a>
+        <a href="index.html" class="nav__logo">Clean <span>Lux</span></a>
         <nav>
           <ul class="nav__links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="ueber-uns.html">Über uns</a></li>
             <li><a href="leistungen.html">Leistungen</a></li>
-            <li><a href="projekte.html">Projekte</a></li>
+            <li><a href="referenzen.html">Referenzen</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
-        <a href="kontakt.html" class="btn btn--yellow nav__cta">Jetzt anfragen →</a>
+        <a href="kontakt.html" class="btn btn--gold nav__cta">Jetzt anfragen</a>
         <button class="nav__burger" aria-label="Menü öffnen" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -33,11 +32,11 @@
     </div>
     <nav class="nav__mobile">
       <a href="index.html">Home</a>
-      <a href="ueber-uns.html">Über uns</a>
       <a href="leistungen.html">Leistungen</a>
-      <a href="projekte.html">Projekte</a>
+      <a href="referenzen.html">Referenzen</a>
+      <a href="ueber-uns.html">Über uns</a>
       <a href="kontakt.html">Kontakt</a>
-      <a href="kontakt.html" class="btn btn--yellow">Jetzt anfragen →</a>
+      <a href="kontakt.html" class="btn btn--gold">Jetzt anfragen</a>
     </nav>
   </header>
 
@@ -46,130 +45,137 @@
     <div class="container">
       <div class="page-hero__content">
         <span class="eyebrow">Sprechen Sie uns an</span>
-        <h1>Kontakt</h1>
-        <p>Kostenloser Ersttermin, unverbindliche Anfragen und schnelle Rückmeldung – wir freuen uns auf Ihr Projekt.</p>
+        <h1>Kontakt aufnehmen</h1>
+        <div class="page-hero__divider"></div>
+        <p>Wir antworten innerhalb von 24 Stunden – kostenlos und unverbindlich.</p>
       </div>
     </div>
   </section>
 
-  <!-- KONTAKT FORMULAR + INFO -->
-  <section class="section">
+  <!-- KONTAKT -->
+  <section class="section section--white">
     <div class="container">
       <div class="contact-grid">
 
         <!-- FORMULAR -->
         <div class="fade-up">
-          <span class="eyebrow">Schreiben Sie uns</span>
-          <h2 style="margin-bottom: 36px;">Anfrage senden</h2>
+          <span class="eyebrow">Anfrage senden</span>
+          <h2 style="margin-bottom: 36px;">Wie können wir helfen?</h2>
           <form class="contact-form" novalidate>
             <div class="form-row">
               <div class="form-group">
-                <label for="vorname">Vorname</label>
-                <input type="text" id="vorname" name="vorname" placeholder="Max" required />
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required />
               </div>
               <div class="form-group">
-                <label for="nachname">Nachname</label>
-                <input type="text" id="nachname" name="nachname" placeholder="Mustermann" required />
+                <label for="email">E-Mail *</label>
+                <input type="email" id="email" name="email" placeholder="ihre@email.at" required />
               </div>
             </div>
             <div class="form-group">
-              <label for="email">E-Mail-Adresse</label>
-              <input type="email" id="email" name="email" placeholder="max@beispiel.at" required />
-            </div>
-            <div class="form-group">
-              <label for="telefon">Telefonnummer</label>
-              <input type="tel" id="telefon" name="telefon" placeholder="+43 664 123456" />
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+43 660 …" />
             </div>
             <div class="form-group">
               <label for="leistung">Gewünschte Leistung</label>
               <select id="leistung" name="leistung">
                 <option value="">Bitte wählen …</option>
-                <option value="elektro">Elektroinstallation</option>
-                <option value="heizung">Heizung &amp; Sanitär</option>
-                <option value="wartung">Wartung &amp; Reparatur</option>
-                <option value="smarthome">Smart Home</option>
-                <option value="pv">Photovoltaik</option>
-                <option value="gewerbe">Gewerbliche Anlage</option>
+                <option value="grundreinigung">Grundreinigung</option>
+                <option value="baureinigung">Baureinigung</option>
+                <option value="stiegenhaus">Stiegenhausreinigung</option>
+                <option value="fenster">Fenster- &amp; Glasreinigung</option>
+                <option value="hotel">Hotel- &amp; Apartmentreinigung</option>
+                <option value="buero">Büroreinigung</option>
                 <option value="sonstiges">Sonstiges</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="nachricht">Ihre Nachricht</label>
-              <textarea id="nachricht" name="nachricht" rows="5" placeholder="Beschreiben Sie kurz Ihr Vorhaben – je mehr Details, desto besser können wir uns vorbereiten …"></textarea>
+              <label for="nachricht">Nachricht</label>
+              <textarea id="nachricht" name="nachricht" rows="5" placeholder="Beschreiben Sie kurz Ihr Objekt und Ihr Anliegen – je mehr Details, desto besser können wir Ihnen helfen …"></textarea>
             </div>
-            <button type="submit" class="btn btn--yellow btn-full" style="width:100%; justify-content:center; font-size:0.95rem; padding: 16px;">
-              Anfrage absenden →
+            <button type="submit" class="btn btn--gold btn--full" style="font-size: 0.9rem; padding: 16px;">
+              Anfrage senden →
             </button>
-            <p style="font-size: 0.78rem; color: var(--gray); text-align: center; margin-top: 12px;">
-              Mit dem Absenden stimmen Sie unserer <a href="#" style="color: var(--dark); text-decoration: underline;">Datenschutzerklärung</a> zu.
+            <p style="font-size: 0.76rem; color: #A0AEC0; text-align: center; margin-top: 14px;">
+              Mit dem Absenden stimmen Sie unserer <a href="#" style="color: #4A5568; text-decoration: underline;">Datenschutzerklärung</a> zu.
             </p>
           </form>
         </div>
 
         <!-- KONTAKTDATEN -->
         <div class="contact-info-box fade-up">
-          <h3>Direkter Kontakt</h3>
+          <span class="eyebrow">Direkt erreichbar</span>
+          <h3>Kontaktdaten</h3>
+          <div class="contact-info-divider"></div>
           <div class="contact-info-items">
-            <div class="contact-info-item">
-              <div class="contact-info-icon">👤</div>
-              <div>
-                <strong>Ansprechpartner</strong>
-                <span>Samuel Keßler</span>
-              </div>
-            </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">📞</div>
               <div>
                 <strong>Telefon</strong>
-                <a href="tel:+436649918004">+43 664 99180044</a>
+                <a href="tel:+436604777792">+43 660 477 77 92</a>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">✉️</div>
               <div>
                 <strong>E-Mail</strong>
-                <a href="mailto:grazestudio@gmail.com">grazestudio@gmail.com</a>
+                <a href="mailto:cleanlux.rechnung@hotmail.com">cleanlux.rechnung@hotmail.com</a>
               </div>
             </div>
             <div class="contact-info-item">
               <div class="contact-info-icon">📍</div>
               <div>
-                <strong>Standort</strong>
-                <span>Graz, Steiermark<br />Österreich</span>
+                <strong>Region</strong>
+                <span>Wien &amp; Umgebung, Österreich</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">💬</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/436604777792" target="_blank" rel="noopener">Nachricht schreiben →</a>
               </div>
             </div>
           </div>
 
+          <div class="contact-info-divider"></div>
+
           <div class="opening-hours">
-            <h4>Öffnungszeiten</h4>
+            <h4>Erreichbarkeit</h4>
             <div class="opening-hours-list">
               <div class="opening-hours-item">
                 <span>Montag – Freitag</span>
-                <span>07:00 – 18:00</span>
+                <span>07:00 – 20:00</span>
               </div>
               <div class="opening-hours-item">
                 <span>Samstag</span>
-                <span>08:00 – 13:00</span>
+                <span>08:00 – 16:00</span>
               </div>
               <div class="opening-hours-item">
                 <span>Sonntag</span>
-                <span>Geschlossen</span>
+                <span>Nach Vereinbarung</span>
               </div>
               <div class="opening-hours-item">
-                <span>Notfall-Erreichbarkeit</span>
-                <span style="color: var(--yellow);">24/7</span>
+                <span>WhatsApp</span>
+                <span style="color: var(--color-accent);">Jederzeit</span>
               </div>
             </div>
           </div>
+
+          <div class="contact-info-divider"></div>
+
+          <a href="https://wa.me/436604777792" target="_blank" rel="noopener" class="btn btn--whatsapp btn--full">
+            💬 Per WhatsApp schreiben
+          </a>
         </div>
 
       </div>
 
-      <!-- GOOGLE MAPS -->
+      <!-- KARTE -->
       <div class="map-placeholder fade-up">
         <iframe
-          title="Standort Graz"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85275.35707929613!2d15.356712!3d47.070714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e35b76a5c2e13%3A0x9e5a8d1c4c5d5d8b!2sGraz%2C%20Austria!5e0!3m2!1sde!2sat!4v1700000000000!5m2!1sde!2sat"
+          title="Wien – Clean Lux e.U."
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85537.0!2d16.363449!3d48.210033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079e5136ca9f%3A0xfdc496b6339a8b47!2sVienna%2C%20Austria!5e0!3m2!1sde!2sat!4v1700000000000!5m2!1sde!2sat"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -184,9 +190,9 @@
       <div class="cta-banner__inner">
         <div>
           <h2>Lieber direkt anrufen?</h2>
-          <p>Samuel Keßler ist Mo–Fr von 7–18 Uhr persönlich erreichbar.</p>
+          <p>Mo–Fr von 7–20 Uhr persönlich erreichbar.</p>
         </div>
-        <a href="tel:+436649918004" class="btn btn--black">+43 664 99180044</a>
+        <a href="tel:+436604777792" class="btn btn--dark">+43 660 477 77 92</a>
       </div>
     </div>
   </section>
@@ -196,57 +202,57 @@
     <div class="container">
       <div class="footer__grid">
         <div>
-          <a href="index.html" class="footer__logo">[Firmen<span>name</span>]</a>
-          <p class="footer__desc">Ihr zuverlässiger Elektriker und Installateur in Graz und der Steiermark. Meisterbetrieb mit über 12 Jahren Erfahrung – für Privat und Gewerbe.</p>
+          <a href="index.html" class="footer__logo">Clean <span>Lux</span></a>
+          <p class="footer__slogan">„Sauberkeit, die man sieht. Qualität, die man spürt."</p>
+          <p class="footer__desc">Exklusive Gebäudereinigung für Privat- und Geschäftskunden in Wien und Umgebung. Diskret, zuverlässig, professionell.</p>
         </div>
         <div>
           <h4>Navigation</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="ueber-uns.html">Über uns</a></li>
             <li><a href="leistungen.html">Leistungen</a></li>
-            <li><a href="projekte.html">Projekte</a></li>
+            <li><a href="referenzen.html">Referenzen</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </div>
         <div>
           <h4>Leistungen</h4>
           <ul>
-            <li><a href="leistungen.html">Elektroinstallation</a></li>
-            <li><a href="leistungen.html">Heizung &amp; Sanitär</a></li>
-            <li><a href="leistungen.html">Wartung &amp; Reparatur</a></li>
-            <li><a href="leistungen.html">Smart Home</a></li>
-            <li><a href="leistungen.html">Photovoltaik</a></li>
+            <li><a href="leistungen.html">Grundreinigung</a></li>
+            <li><a href="leistungen.html">Baureinigung</a></li>
+            <li><a href="leistungen.html">Stiegenhausreinigung</a></li>
+            <li><a href="leistungen.html">Fensterreinigung</a></li>
+            <li><a href="leistungen.html">Büroreinigung</a></li>
           </ul>
         </div>
         <div>
           <h4>Kontakt</h4>
           <div class="footer__contact">
             <div class="footer__contact-item">
-              <span class="footer__contact-icon">👤</span>
-              <span>Samuel Keßler</span>
-            </div>
-            <div class="footer__contact-item">
               <span class="footer__contact-icon">📞</span>
-              <a href="tel:+436649918004">+43 664 99180044</a>
+              <a href="tel:+436604777792">+43 660 477 77 92</a>
             </div>
             <div class="footer__contact-item">
               <span class="footer__contact-icon">✉️</span>
-              <a href="mailto:grazestudio@gmail.com">grazestudio@gmail.com</a>
+              <a href="mailto:cleanlux.rechnung@hotmail.com">cleanlux.rechnung@hotmail.com</a>
             </div>
             <div class="footer__contact-item">
               <span class="footer__contact-icon">📍</span>
-              <span>Graz, Steiermark</span>
+              <span>Wien &amp; Umgebung</span>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon">💬</span>
+              <a href="https://wa.me/436604777792" target="_blank" rel="noopener">WhatsApp</a>
             </div>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copy">© 2025 [Firmenname]. Alle Rechte vorbehalten.</p>
+        <p class="footer__copy">© 2025 Clean Lux e.U. – Exklusive Gebäudereinigung. Alle Rechte vorbehalten.</p>
         <div class="footer__bottom-links">
           <a href="#">Impressum</a>
           <a href="#">Datenschutz</a>
-          <a href="#">AGB</a>
         </div>
       </div>
     </div>
